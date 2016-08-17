@@ -15,5 +15,6 @@ public final class AppConstants {
     public static final String TAG_CUSTOMER_INFO_FRAGMENT = "customer_info_fragment";
     public static final String TAG_CUSTOMER_JOBS_FRAGMENT = "customer_jobs_fragment";
     public static final String TAG_CUSTOMER_CALENDAR_FRAGMENT = "customer_calendar_fragment";
-    public static final String TAG_CUSTOMER_TIME_FRAGMENT = "customer_time_fragment";
+    public static final String TAG_CUSTOMER_TIME_ONE_FRAGMENT = "customer_time_one_fragment";
+    public static final String TAG_CUSTOMER_TIME_TWO_FRAGMENT = "customer_time_two_fragment";
 }

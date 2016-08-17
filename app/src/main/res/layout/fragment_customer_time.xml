@@ -1,13 +1,78 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ashutosh.mishra.logbook.customer.CustomerTimeFragment">
+    android:orientation="vertical"
+    tools:context=".customer.AllotTwoFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/date_header_textview_allot_emp_two_fragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="40dp"
+        android:background="@color/primary"
+        android:drawableEnd="@drawable/ic_mode_edit_white_24dp"
+        android:drawableRight="@drawable/ic_mode_edit_white_24dp"
+        android:gravity="center"
+        android:text="Date"
+        android:textColor="@android:color/white" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/est_time_textview_allot_emp_two_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Estimated Time : "
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/act_time_textview_allot_emp_two_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Used Hours"
+            android:textSize="14sp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/employer_msg_textview_allot_emp_two_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message to employer"
+            android:textSize="14sp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/employee_msg_textview_allot_emp_two_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message to employee"
+            android:textSize="14sp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/confirm_btn_allot_emp_two_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Approve"/>
+
+</LinearLayout>

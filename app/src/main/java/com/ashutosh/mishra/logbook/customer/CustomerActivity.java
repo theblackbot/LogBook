@@ -5,7 +5,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -15,9 +14,6 @@ import com.ashutosh.mishra.logbook.AppConstants;
 import com.ashutosh.mishra.logbook.R;
 import com.ashutosh.mishra.logbook.models.Customer;
 import com.google.gson.Gson;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public class CustomerActivity extends AppCompatActivity {
 
@@ -116,9 +112,9 @@ public class CustomerActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
                 bundle.putString("cust_data", new Gson().toJson(customer));
-                Fragment fragment = new CustomerTimeFragment();
+                Fragment fragment = new AllotFragment();
                 fragment.setArguments(bundle);
-                getSupportFragmentManager().beginTransaction().replace(R.id.container_customer_activity, fragment, AppConstants.TAG_CUSTOMER_TIME_FRAGMENT).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.container_customer_activity, fragment, AppConstants.TAG_CUSTOMER_TIME_ONE_FRAGMENT).commit();
 
             }
         });

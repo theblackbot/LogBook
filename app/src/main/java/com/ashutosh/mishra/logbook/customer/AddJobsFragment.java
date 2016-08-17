@@ -22,6 +22,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.ashutosh.mishra.logbook.AppConstants;
 import com.ashutosh.mishra.logbook.R;
 import com.ashutosh.mishra.logbook.models.Customer;
 import com.google.gson.Gson;
@@ -144,6 +145,7 @@ public class AddJobsFragment extends Fragment {
                     JSONObject jsonObject = new JSONObject(response);
                     if (jsonObject.getString("message").equalsIgnoreCase("Job has been created")){
                         Toast.makeText(getContext(), "Job Created..", Toast.LENGTH_LONG).show();
+//                        getFragmentManager().beginTransaction().replace(R.id.container_customer_activity, new CustomerJobsFragment(), AppConstants.TAG_CUSTOMER_JOBS_FRAGMENT).commit();
                     } else {
                         Toast.makeText(getContext(), "something went wrong..", Toast.LENGTH_LONG).show();
                     }
