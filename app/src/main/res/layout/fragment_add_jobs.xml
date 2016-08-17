@@ -1,0 +1,157 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ashutosh.mishra.logbook.customer.AddJobsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date_header_textview_customer_add_jobs_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="2016/08/17"
+            android:gravity="center"
+            android:background="@color/primary"
+            android:textColor="@color/cardview_light_background"
+            android:drawableRight="@drawable/ic_mode_edit_white_24dp"
+            android:drawableEnd="@drawable/ic_mode_edit_white_24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/edittext_job_name_add_job_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name of job : "
+                    android:textSize="14sp"
+                    android:text="New Job"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edittext_job_est_time_add_job_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Hour Estimated : "
+                    android:textSize="14sp"
+                    android:text="one hour"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edittext_job_comment_add_job_fragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Comments"
+                            android:textSize="14sp"
+                            android:text="some comments"/>
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_customer_add_job_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Daily"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Weekly"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Each Two Week"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Monthly"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Each 3 Months"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Each 6 Months"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Yearly"/>
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_btn_add_jobs_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Job"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

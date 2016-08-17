@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ashutosh.mishra.logbook.customer.CustomerInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageview_image_customer_info_fragment"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_perm_identity_black_24dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/imageview_image_customer_info_fragment"
+        android:layout_toEndOf="@+id/imageview_image_customer_info_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="General Info :"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textview_name_customer_info_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name : "/>
+
+
+        <TextView
+            android:id="@+id/textview_address_customer_info_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address : "/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login Info :"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textview_username_customer_info_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UserName : "/>
+
+
+        <TextView
+            android:id="@+id/textview_password_customer_info_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password : "/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

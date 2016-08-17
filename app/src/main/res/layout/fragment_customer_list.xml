@@ -1,0 +1,10 @@
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerview_customer_list_fragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ashutosh.mishra.logbook.CustomerListFragment">
+
+
+</android.support.v7.widget.RecyclerView>
